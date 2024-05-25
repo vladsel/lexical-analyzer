@@ -1,0 +1,69 @@
+            Line          Column            Code                         Token
+|-------------------------------------------------------------------------------|
+
+               1               1             401                       PROGRAM
+               1              20               1                             ;
+               2               5             402                         BEGIN
+               4              13             404                          LOOP
+               5              17             404                          LOOP
+               6              21             404                          LOOP
+               7              25             404                          LOOP
+               8              29             406                          CASE
+               8              34            1001                         FIRST
+               8              40             407                            OF
+               9              29             408                       ENDCASE
+               9              36               1                             ;
+              10              25             405                       ENDLOOP
+              11              21             405                       ENDLOOP
+              11              28               1                             ;
+              12              24               1                             ;
+              13              13             405                       ENDLOOP
+              13              20               1                             ;
+              14               9             405                       ENDLOOP
+              14              16               1                             ;
+              15               5             403                           END
+              17               1             401                       PROGRAM
+              17               9            1002                   LEXERTEST44
+              17              21               1                             ;
+              18               5             402                         BEGIN
+              19               9             406                          CASE
+              19              14             501                             2
+              19              16             407                            OF
+              20               9             408                       ENDCASE
+              20              17               1                             ;
+              21               9             406                          CASE
+              21              14             502                             3
+              21              16             407                            OF
+              22               9             408                       ENDCASE
+              22              17               1                             ;
+              23               9             406                          CASE
+              23              14             503                             4
+              23              16             407                            OF
+              24               9             408                       ENDCASE
+              24              17               1                             ;
+
+|-------------------------------------------------------------------------------|
+
+
+               Lexical error: Illegal symbol(s):  lexerTEST4
+               Line: 1; Column: 9; Code: 5001;
+
+               Lexical error: Illegal symbol(s):  LOoP
+               Line: 3; Column: 9; Code: 5002;
+
+               Lexical error: Illegal symbol(s):  12.5
+               Line: 7; Column: 30; Code: 5003;
+
+               Lexical error: Illegal symbol(s):  endloop
+               Line: 12; Column: 17; Code: 5004;
+
+               Lexical error: *) expected but end of file found:  (************ ERROR COMMENT ************
+		LOOP
+    END
+               Line: 27; Column: 9; Code: 5005;
+
+
+|-------------------------------------------------------------------------------|
+
+
+

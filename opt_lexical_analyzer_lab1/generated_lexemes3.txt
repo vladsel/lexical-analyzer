@@ -1,0 +1,69 @@
+            Line          Column            Code                         Token
+|-------------------------------------------------------------------------------|
+
+               1               1             401                       PROGRAM
+               1               9            1001                    LEXERTEST3
+               1              19               1                             ;
+               2               5             402                         BEGIN
+               3               9             406                          CASE
+               3              14            1002                         COUNT
+               3              20             407                            OF
+               3              23            1002                         COUNT
+               3              31             501                            50
+               3              33               2                             :
+               3              34               2                             :
+               3              35               2                             :
+               4              13               3                             /
+               5              17             406                          CASE
+               5              22            1003                        COUNT1
+               5              29             407                            OF
+               5              32            1003                        COUNT1
+               5              41             502                            25
+               5              43               2                             :
+               5              44               2                             :
+               6              17               3                             /
+               7              26            1004                        COUNT2
+               7              33             407                            OF
+               7              36             503                           222
+               7              40             409                           MOD
+               7              44            1004                        COUNT2
+               7              50               2                             :
+               8              21               3                             /
+               9              25             406                          CASE
+               9              30            1005                        COUNT3
+               9              37             407                            OF
+               9              40             408                       ENDCASE
+               9              47               1                             ;
+              10              21               4                             \
+              11              21             408                       ENDCASE
+              11              28               1                             ;
+              12              17               4                             \
+              13              17             408                       ENDCASE
+              13              24               1                             ;
+              14              13               4                             \
+              15               9             408                       ENDCASE
+              15              16               1                             ;
+
+|-------------------------------------------------------------------------------|
+
+
+               Lexical error: Illegal symbol(s):  <>
+               Line: 2; Column: 11; Code: 5001;
+
+               Lexical error: Illegal symbol(s):  +
+               Line: 3; Column: 29; Code: 5002;
+
+               Lexical error: Illegal symbol(s):  +
+               Line: 5; Column: 39; Code: 5002;
+
+               Lexical error: Illegal symbol(s):  case
+               Line: 7; Column: 21; Code: 5003;
+
+               Lexical error: Illegal symbol(s):  END.
+               Line: 16; Column: 5; Code: 5004;
+
+
+|-------------------------------------------------------------------------------|
+
+
+
