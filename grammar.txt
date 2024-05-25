@@ -1,5 +1,3 @@
-Варіант 18
-
 1. <signal-program> --> <program>
 2. <program> --> PROGRAM <procedure-identifier> ; <block>. 
 3. <block> --> BEGIN <statements-list> END
