@@ -37,6 +37,7 @@ Single character separators and operation signs ( : / ; + etc.): 0 – 255 (ie A
 Multicharacter separators ( := <= <= etc.): 301 – 400
 
 Keywords (BEGIN, END, FOR, etc.): 401 – 500
+
 Constants: 501 - 1000
 
 Identifiers: 1001 - . . .
