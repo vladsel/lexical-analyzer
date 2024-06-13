@@ -1,6 +1,5 @@
 # lexical-analyzer
 
-(15.05.2022)
 1. Develop a lexical analyzer (LA) program for a subset of the SIGNAL programming language.
 2. The lexical analyzer should provide the following actions:
 • removal (skipping) of whitespace characters: space (code 
